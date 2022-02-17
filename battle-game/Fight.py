@@ -1,4 +1,4 @@
-from character.Character import *
+from characters.Character import Character
 
 
 class Fight:
@@ -7,7 +7,7 @@ class Fight:
         self.fighter_two = fighter_two
 
     def round(self):
-        # Flag to know which turn is
+        # Who's turn ? Flag
         turn = True
         while (self.fighter_one.hp > 0) and (self.fighter_two.hp > 0):
             if turn:
